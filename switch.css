@@ -169,15 +169,25 @@ a {
 }
 
 @media (max-width: 649px) {
+
+  /* * {
+    margin-right: -100px;
+  } */
   body {
     font-size: 16px;
     overflow-x: hidden;
+    height: 70vh;
+    width: 100vw;
+    /* margin-left: 15%; */
+  }
+  h1 {
+    margin-left: 54px;
   }
   .container {
     border: 2px solid black;
     font-size: 20px;
-    margin: auto;
-    height: 65%;
+    margin-left: 16%;
+    height: 550px;
     width: 85%;
     margin-top: 50px;
     background-image: linear-gradient(
@@ -213,16 +223,17 @@ a {
   .inp2 {
     display: grid;
     grid-template-columns: 60px 120px;
+    row-gap: 5px;
     /* grid-template-rows: 1fr; */
   }
 
   .inp1 p,
   .inp2 p {
     display: grid;
-    grid-template-columns: 50% 120% 50% 20%;
-    margin-left: 50%;
+    grid-template-columns: 50% 200% 50% 20%;
+    margin-left: 27%;
     width: 100%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
   }
 
   #range1Dec,
