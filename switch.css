@@ -9,12 +9,25 @@ body {
   width: 100vw;
   overflow: hidden;
   user-select: none;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(46 179 252),
+    rgb(155 7 219)
+  );
+}
+
+.fa-wifi {
+  font-size: 50px;
+  color: rgb(220, 20, 60);
 }
 
 h1 {
   text-align: center;
   margin-top: 40px;
-  font-size: 40px;
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+  font-weight: 500;
+  color: aliceblue;
 }
 
 .container {
@@ -24,18 +37,23 @@ h1 {
   height: 460px;
   width: 70%;
   margin-top: 90px;
-  background-image: linear-gradient(
-    145deg,
-    rgb(170, 190, 191),
-    rgb(98, 131, 148)
-  );
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .container p {
   text-align: center;
   margin-top: 10px;
   font-size: 30px;
-  opacity: 1;
+  color: white;
+}
+
+.container p i {
+  color: crimson;
 }
 
 .inputContainer p {
@@ -65,10 +83,10 @@ a {
 .btn3_container {
   width: 157px;
   height: 50px;
-  background-color: black;
+  background-color: rgba(255, 255, 255, 0.311);
   display: inline-block;
   position: relative;
-  border: 3px solid #111;
+  border: 1px solid #ffffff46;
   margin-right: 20px;
   box-shadow: -1px 3px 22px 0px rgba(0, 0, 0, 0.75);
   border: 2px solid #fff;
@@ -99,13 +117,13 @@ a {
 
 .main {
   position: absolute;
-  background-color: #ff0099;
+  background-color: rgba(127, 152, 244, 0.804);
   height: 100%;
-  width: 43%;
+  width: 53%;
   box-shadow: 0px 0px 17px -5px #000000;
   border: 1px solid #111;
   border-radius: 2px;
-  right: 93px;
+  right: 80px;
   transition: all 500ms ease;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -114,15 +132,17 @@ a {
 }
 
 .active {
-  right: -5px;
+  right: -2px;
 }
 
 .btn1 {
-  background-color: #000000;
+  background-color: #ffffff3a;
+  color: black;
 }
 
 .btn2 {
-  background-color: #000000;
+  background-color: #ffffff3a;
+  color: black;
 }
 
 .inputContainer {
@@ -164,10 +184,11 @@ a {
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0);
   background-color: rgba(255, 255, 255, 0.125);
-  color: white;
   margin: 0px 7px;
 }
-
+.inputContainer p i {
+  color: rgba(255, 255, 255, 0.686);
+}
 @media (max-width: 649px) {
   body {
     font-size: 16px;
@@ -180,11 +201,12 @@ a {
     height: 72%;
     width: 85%;
     margin-top: 50px;
-    background-image: linear-gradient(
-      145deg,
-      rgb(170, 190, 191),
-      rgb(98, 131, 148)
-    );
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
   }
   .flexButton1 {
     padding-top: 10px;
@@ -269,7 +291,7 @@ a {
   }
 }
 
-@media (max-width: 1300px) and (min-width: 650px){
+@media (max-width: 1300px) and (min-width: 650px) {
   body {
     font-size: 16px;
     height: 100vh;
@@ -281,11 +303,12 @@ a {
     height: 70%;
     width: 85%;
     margin-top: 90px;
-    background-image: linear-gradient(
-      145deg,
-      rgb(170, 190, 191),
-      rgb(98, 131, 148)
-    );
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
   }
 
   .container p {

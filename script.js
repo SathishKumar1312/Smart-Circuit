@@ -3,10 +3,16 @@ const buttons = document.querySelectorAll(".btn3_container");
 buttons.forEach(button => {
   button.addEventListener("click", function (event) {
     let main = this.querySelector('.main');
+    let on = this.querySelector('.btn1');
+    let off = this.querySelector('.btn2');
     if (main.classList.contains("active")) {
       main.classList.remove("active");
+      on.innerText = "";
+      off.innerText = "OFF";
     } else {
       main.classList.add("active");
+      off.innerText = "";
+      on.innerText = "ON";
     }
   });
 });
