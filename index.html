@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hall</title>
-    <link rel="stylesheet" href="switch.css" />
+    <title>SMART CIRCUIT</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -25,87 +25,50 @@
     ></script>
   </head>
   <body>
-    <h1><i class="fa-solid fa-wifi"></i>Smart Circuits</h1>
+    <h1><i id="i1" class="fa-solid fa-wifi"></i> Smart Circuits</h1>
     <div class="container">
-      <p><i class="fa-solid fa-tv"></i> Connected to 192.168.1.1</p>
-      <div class="flexButton1">
-        <label for="automatic">Automatic</label>
-        <button class="btn3_container">
-          <a href="#">
-            <span class="btn btn1">ON</span>
-            <span class="btn main"></span>
-            <span class="btn btn2">OFF</span>
+      <h2>Connected Rooms</h2>
+      <div class="containers">
+        <button id="button" class="button1">
+          <a href="switch.html">
+            <div class="container1">
+              <span id="hall-span">
+                <i class="fa-solid fa-tv"></i><span> HALL</span></span
+              >
+            </div>
+          </a>
+        </button>
+        <button id="button" class="button1">
+          <a href="switch.html">
+            <div class="container1">
+              <span id="bedroom-span"
+                ><i class="fa-solid fa-bed"></i><span> BEDROOM</span></span
+              >
+            </div>
+          </a>
+        </button>
+        <button id="button" class="button1">
+          <a href="switch.html">
+            <div class="container1">
+              <span id="kitchen-span"
+                ><i class="fa-sharp fa-solid fa-kitchen-set"></i
+                ><span> KITCHEN</span></span
+              >
+            </div>
+          </a>
+        </button>
+
+        <button id="button" class="button1">
+          <a href="switch.html">
+            <div class="container1">
+              <span id="add-rooms-span"
+                ><i class="fa-solid fa-circle-plus"></i
+                ><span> ADD ROOMS</span></span
+              >
+            </div>
           </a>
         </button>
       </div>
-      <div class="controlsContainer">
-        <h3>Controls :</h3>
-        <div class="controls">
-          <div class="inputContainer">
-            <div class="inp1">
-            <label for="led">LED</label>
-            <button class="btn3_container">
-              <a href="#">
-                <span class="btn btn1">ON</span>
-                <span class="btn main"></span>
-                <span class="btn btn2">OFF</span>
-              </a>
-            </button>
-              <p>
-                <span id="range1Dec"><i class="fa-solid fa-minus"></i></span>
-                <input
-                  type="range"
-                  id="ranger1"
-                  min="0"
-                  max="12"
-                  value="0"
-                /><span id="range1Inc"><i class="fa-solid fa-plus"></i></span>
-                <span id="range1">00</span>
-              </p>
-            </div>
-            <div class="inp2">
-            <label for="fan">FAN</label>
-            <button class="btn3_container">
-              <a href="#">
-                <span class="btn btn1">ON</span>
-                <span class="btn main"></span>
-                <span class="btn btn2">OFF</span>
-              </a>
-            </button>
-              <p>
-                <span id="range2Dec" value="0"><i class="fa-solid fa-minus"></i></span>
-                <input
-                  type="range"
-                  id="ranger2"
-                  min="0"
-                  max="7"
-                  value="0"
-                /><span id="range2Inc"><i class="fa-solid fa-plus"></i></span>
-                <span id="range2">00</span>
-              </p>
-            </div>
-          </div>
-          <div class="switch">
-            <label for="switch1">SWITCH 1</label>
-            <button class="btn3_container">
-              <a href="#">
-                <span class="btn btn1">ON</span>
-                <span class="btn main"></span>
-                <span class="btn btn2">OFF</span>
-              </a>
-            </button>
-            <label for="switch2">SWITCH 2</label>
-            <button class="btn3_container">
-              <a href="#">
-                <span class="btn btn1">ON</span>
-                <span class="btn main"></span>
-                <span class="btn btn2">OFF</span>
-              </a>
-            </button>
-          </div>
-        </div>
-      </div>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,139 @@
+h1 {
+  text-align: center;
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+  font-weight: 500;
+}
+body {
+  height: 93.6vh;
+  color: white;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(46 179 252),
+    rgb(155 7 219)
+  );
+}
+i {
+  color: rgb(220, 20, 60);
+  font-size: 26px;
+}
+
+.fa-wifi {
+  font-size: 50px;
+}
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 28px;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  /* box-shadow: 0 0 10px rgba(24, 24, 24, 0.233);
+    background-color: #ffffff23; 
+   border-radius: 10px; */
+  width: 70%;
+  height: 400px;
+  margin: auto;
+  margin-top: 5%;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.container h2 {
+  text-align: center;
+}
+.containers {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#button {
+  background-color: #ffffff57;
+  padding: 50px;
+  text-align: center;
+  /* padding-bottom: 20px; */
+  border: none;
+  border-radius: 8px;
+}
+
+span {
+  color: rgb(38, 13, 80);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+#hall-span {
+  font-size: 20px;
+}
+
+#bedroom-span {
+  font-size: 20px;
+}
+
+#kitchen-span {
+  font-size: 20px;
+}
+
+#add-rooms-span {
+  font-size: 20px;
+}
+
+
+
+@media (max-width :425px){
+  body{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.containers{
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  
+}
+.container{
+  width: 350px;
+  height: fit-content;
+  
+}
+h1{
+  font-size: 30px;
+  text-align: center;
+}
+#i1{
+  font-size: 30px;
+}
+.container{
+  margin-top: 30px;
+}
+
+}
+
+@media (max-width :768px){
+  .container{
+    padding-bottom: 40px;
+    margin-top: 50px;
+  }
+}
+@media (max-width :320px){
+  .container{
+    width: 280px;
+    padding-right: 17px;
+  }
+}
+
+
+
