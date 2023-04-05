@@ -195,9 +195,10 @@ a {
 #homepage {
   text-align: center;
   margin: auto;
-  margin-left: 50%;
+  margin-left: 45%;
   background-color: #ffffff2e;
   padding: 7px;
+  margin-top: 5px;
 }
 
 #homepage a {
